@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [MySuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="testngfiles.MyListeners"/>
+  </listeners>
+  <test thread-count="2" name="NewTest(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke_Test"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testexecution.TestScript">
+        <methods>
+          <include name="signIn_DemoBlaze"/>
+          <include name="signUp_DemoBlaze"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testexecution.TestScript -->
+    </classes>
+  </test> <!-- NewTest(failed) -->
+</suite> <!-- Failed suite [MySuite] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="MySuite">
+	
+	<listeners>
+		<listener class-name="testngfiles.MyListeners"/>
+	</listeners>
+
+  <test name="NewTest">
+	<parameter name="Browser" value="chrome"/>
+	<classes>
+		<class name="testexecution.TestScript"/>
+	</classes>
+  
+  </test> <!-- TestDemoBlaze -->
+</suite> <!-- MySuite -->
